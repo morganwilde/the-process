@@ -193,7 +193,7 @@
       5. delete links;
       6. the parser itself;
       
-     I need to resolve the remaining bugs
-     1. reciprocal links draw over the existing link, making the label less visible, it should draw a new link, just the end point;
-     2. the arrow graphic on temporary links is almost invisible, it should look just like the normal one;
-     3. temporary nodes are rendered without taking into account the current graph, thus they overlay other visual items;
+      I need to resolve the remaining bugs:
+      1. reciprocal links draw over the existing link, making the label less visible, it should draw a new link, just the end point;
+      2. the arrow graphic on temporary links is almost invisible, it should look just like the normal one;
+      3. temporary nodes are rendered without taking into account the current graph, thus they overlay other visual items;
