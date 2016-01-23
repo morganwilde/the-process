@@ -176,3 +176,24 @@
    - `23.01 00:16` To help with readability, I will flip transition labels 180 degrees when they're rotating upside down.
    
    ![38.png](38.png)
+   
+   - `23.01 12:42` I fixed the bug that broke the new node mechanism if you hovered over other possible nodes. I did this by introducing checks in the setter/getter methods of `AutomataController.hidePossibleLinksStateView`.
+   
+   ![39.png](39.png)
+   
+11. ### Remaining bugs in the current version
+   - `23.01 12:46` Before continuing with new features, such as the ability to
+      1. push the moving node atop everything else so that there is free movement
+      1. don't stop moving the node until there is a mouse up event
+      1. drag temporary nodes onto existing ones, and create reciprocal links that way;
+      1. mark an entry node visually;
+      2. mark end nodes;
+      3. save the current graph into `window.sessionStorage`;
+      4. create self-loops;
+      5. delete links;
+      6. the parser itself;
+      
+     I need to resolve the remaining bugs
+     1. reciprocal links draw over the existing link, making the label less visible, it should draw a new link, just the end point;
+     2. the arrow graphic on temporary links is almost invisible, it should look just like the normal one;
+     3. temporary nodes are rendered without taking into account the current graph, thus they overlay other visual items;
