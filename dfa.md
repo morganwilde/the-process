@@ -160,3 +160,19 @@
    - `22.01 22:12` I need to fix the `drawStateCenteredAt()` method in my `AutomataController`, because it currently is generating link according to the old model.
    
    - `22.01 22:16` Turns out that was not a bug, the controller was just unable to draw a node that was unreachable from the starting node.
+   
+   - `22.01 22:19` I have to adjust the whole process for adding new nodes, because it is now broken.
+   
+   ![35.png](35.png)
+   
+   - `23.01 00:07` I feel like I've added extra complexity now and it's hard to trace where the issues are coming from. Still, the ability to add new nodes is back online.
+   
+   ![36.png](36.png)
+   
+   - `23.01 00:15` Added a mouse over effect on `NodeView` placeholders.
+   
+   ![37.png](37.png)
+   
+   - `23.01 00:16` To help with readability, I will flip transition labels 180 degrees when they're rotating upside down.
+   
+   ![38.png](38.png)
