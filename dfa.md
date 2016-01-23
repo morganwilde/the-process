@@ -94,3 +94,46 @@
    - `03:10` One issue that is immediatelly obvious is the reciprocal link not being shifted for the temporary link.
    
    ![21.png](21.png)
+   
+   - `22.01 12:58` Another way of solving the reciprocal link would be to fit everything on one line, as suggested in this [answer](http://graphicdesign.stackexchange.com/questions/65842/how-to-design-arrow-links-between-two-nodes/65848#65848). But this requires that the symbol be the same, because there is no room for two labels. I now have to rotate the links around the reciprocating node.
+   
+   - `22.01 13:34` While working on the previous issue, I found the alphabets having an uneven number of letters produce this misaligned picture. I need to always adjust the rotation of the receiving node.
+   
+   ![22.png](22.png)
+   
+   - `22.01 14:09` The solution was pretty obvious looking back, just rotate the link 180 degrees.
+   
+   ![23.png](23.png)
+   
+   - `22.01 14:33` Solved the hover issue by introducing a timer once you leave a node.
+   
+   ![24.png](24.png)
+   
+   - `22.01 14:45` Now I need to create the node itself and the link leading up to it.
+   
+   - `22.01 15:08` The functionality for adding new nodes is complete. But there are other issues related to rotating the origin for new links.
+   
+   ![25.png](25.png)
+   
+   - `22.01 15:39` Rotation now works in all tested cases.
+   
+   ![26.png](26.png)
+   
+   - `22.01 15:48` I need to set the reciprocal flag on back links when I create them.
+   
+   - `22.01 16:08` I've added an update method on `LinkView` to allow me to redraw it when properties change. Otherwise only new additions to the graph would be drawn.
+   
+   ![27.png](27.png)
+   
+9. ### The mechanism for moving existing nodes around
+   - `22.01 16:10` I first need to change the on mouse down event to not trigger node creation. Change that to mouse up.
+   - `22.01 17:17` You can now move nodes. `NodeView` now also has an `update()` method.
+   
+   ![28.png](28.png)
+   
+   - `22.01 17:20` Fixed an inconveniece where after moving a node you had to exit and enter the node again to see the interface for adding linked nodes.
+   
+   ![29.png](29.png)
+   
+10. ### Change `LinkView` design
+   - `22.01 17:24` I will change the overall look for the link as per suggestions in this SE [answer](http://graphicdesign.stackexchange.com/questions/65842/how-to-design-arrow-links-between-two-nodes/65848#65848).
