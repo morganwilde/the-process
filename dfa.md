@@ -137,3 +137,26 @@
    
 10. ### Change `LinkView` design
    - `22.01 17:24` I will change the overall look for the link as per suggestions in this SE [answer](http://graphicdesign.stackexchange.com/questions/65842/how-to-design-arrow-links-between-two-nodes/65848#65848).
+   - `22.01 20:17` The changes to accomodate this new design are not limited to `LinkView`, I now have to change the model to have reciprocal `Link`s.
+   
+   ![30.png](30.png)
+   
+   - `22.01 20:52` The model now is pretty much adjusted (except for the missing removal methods). Next up is the modified bidrectional arrow placement.
+   
+   ![31.png](31.png)
+   
+   - `22.01 21:08` Repositioning the arrows means getting rid of all previous hacks without losing perfect centering along the link. So far so good.
+   
+   ![32.png](32.png)
+   
+   - `22.01 21:35` Finally cleaned everything up to a point where I could implement the new arrow stiling. Looks much better! In terms of visuals, I need to implement the reciprocal case.
+   
+   ![33.png](33.png)
+   
+   - `22.01 21:50` In the most trivial case - the new style works great. I haven't tested it out yet, so can't say about other cases.
+   
+   ![34.png](34.png)
+   
+   - `22.01 22:12` I need to fix the `drawStateCenteredAt()` method in my `AutomataController`, because it currently is generating link according to the old model.
+   
+   - `22.01 22:16` Turns out that was not a bug, the controller was just unable to draw a node that was unreachable from the starting node.
