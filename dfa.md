@@ -199,3 +199,9 @@
       3. temporary nodes are rendered without taking into account the current graph, thus they overlay other visual items;
 12. ### Critical path to a demo
    - `24.01 23:25` I feel that I need to get to a demo ASAP, because the length of this sideproject has extended beyond my expectations. The main thing that's missing is the ability to create a loop. Let's hope a quick drag and drop will sufice for a solution. But first I need to bring the current node up in DOM hierarchy.
+   
+   ![40.png](40.png)
+   
+   - `24.01 23:51` I've moved the mouse movement handling responsibilities over to the controlls (as I should've), and bring back the view up forward. Works great.
+   
+   ![41.png](41.png)
