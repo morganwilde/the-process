@@ -205,3 +205,21 @@
    - `24.01 23:51` I've moved the mouse movement handling responsibilities over to the controlls (as I should've), and bring back the view up forward. Works great.
    
    ![41.png](41.png)
+   
+   - `25.01 00:13` I think I've nailed the UI for dropping nodes on top of other nodes to create links.
+   
+   ![42.png](42.png)
+   
+   - `25.01 00:37` Got loops to work (tons of bugs, but the functionality is there)! Only thing before string input is to assign accept nodes.
+   
+   ![43.png](43.png)
+   
+   - `25.01 00:54` Entry/Exit states properties are done both on the model and the view. Next stop - simulation and animation!!!
+   
+   ![44.png](44.png)
+   
+   - `25.01 01:29` The UI for string input is done. It's a bit of a hack for now, but on the critical path. The next item is to iterate over each memeber of the string.
+   
+   ![45.png](45.png)
+   
+   ![46.png](46.png)
