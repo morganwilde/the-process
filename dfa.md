@@ -1,4 +1,4 @@
-# The Process
+# The Process - Visualization of a Deterministic Finite Automata
 
 1. ### How to draw a graph so that links are always under nodes?
    - Do it in two passes, first drawing the links and then the nodes.
