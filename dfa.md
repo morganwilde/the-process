@@ -197,3 +197,5 @@
       1. reciprocal links draw over the existing link, making the label less visible, it should draw a new link, just the end point;
       2. the arrow graphic on temporary links is almost invisible, it should look just like the normal one;
       3. temporary nodes are rendered without taking into account the current graph, thus they overlay other visual items;
+12. ### Critical path to a demo
+   - `24.01 23:25` I feel that I need to get to a demo ASAP, because the length of this sideproject has extended beyond my expectations. The main thing that's missing is the ability to create a loop. Let's hope a quick drag and drop will sufice for a solution. But first I need to bring the current node up in DOM hierarchy.
