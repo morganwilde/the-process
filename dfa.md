@@ -223,3 +223,7 @@
    ![45.png](45.png)
    
    ![46.png](46.png)
+   
+   - `25.01 17:00` So the critical path approach definitely worked in that I have something to demo now!
+   
+   ![47.png](47.png)
